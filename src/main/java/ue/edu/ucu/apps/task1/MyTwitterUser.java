@@ -2,10 +2,10 @@ package ue.edu.ucu.apps.task1;
 
 import java.time.LocalDate;
 
-public class MyTwitterUser implements User{
+public class MyTwitterUser implements User {
     private TwitterUser twitUser;
 
-    public MyTwitterUser(TwitterUser tUser){
+    public MyTwitterUser(TwitterUser tUser) {
         this.twitUser = tUser;
     }
 

@@ -14,18 +14,18 @@ public class MessageSender {
         LocalDateTime now = LocalDateTime.now();
         LocalDateTime nextHour = now.plusHours(1);
 
-        for(User user1: users) {
-            if (user1.getCountry().equalsIgnoreCase(country)
-            && user1.getLasActiveDate().isAfter(now.toLocalDate())
-            && user1.getLasActiveDate().isBefore(nextHour.toLocalDate())) {
-                sendMessage(text, user1);
+        for (User userr: users) {
+            if (userr.getCountry().equalsIgnoreCase(country)
+            && userr.getLasActiveDate().isAfter(now.toLocalDate())
+            && userr.getLasActiveDate().isBefore(nextHour.toLocalDate())) {
+                sendMessage(text, userr);
             }
         }
     }
 
     private void sendMessage(String text, User userr) {
         String mail = userr.getEmail();
-        System.out.println("Message" + text +
-        "was sent to this email: " + mail);
+        System.out.println("Message" + text
+        + "was sent to this email: " + mail);
     }
 }

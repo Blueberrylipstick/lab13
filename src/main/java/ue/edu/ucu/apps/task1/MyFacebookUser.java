@@ -2,10 +2,10 @@ package ue.edu.ucu.apps.task1;
 
 import java.time.LocalDate;
 
-public class MyFacebookUser implements User{
+public class MyFacebookUser implements User {
     private FacebookUser faceUser;
 
-    public MyFacebookUser(FacebookUser fUser){
+    public MyFacebookUser(FacebookUser fUser) {
         this.faceUser = fUser;
     }
 
